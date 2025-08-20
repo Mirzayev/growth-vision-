@@ -56,7 +56,7 @@ export default function Footer() {
             {[
               { icon: <FaFacebookF />, link: "https://facebook.com" },
               { icon: <FaTelegramPlane />, link: "https://t.me" },
-              { icon: <FaInstagram />, link: "https://instagram.com" },
+              { icon: <FaInstagram />, link: "https://www.instagram.com/grovision.uz?igsh=MWVkaDZwb2hoanpyaw==" },
               { icon: <FaLinkedinIn />, link: "https://linkedin.com" },
             ].map((item, i) => (
               <a
