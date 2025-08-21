@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import Logo from "../assets/images/Logo.png"
+import Logo from "../assets/images/Logo.png";
+import { Link } from "react-scroll"; // react-scrolldan Link
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const menuItems = [
-    { name: "Asosiy", link: "#" },
-    { name: "Biz haqimizda ", link: "#about" },
-    { name: "Xizmatlarimiz", link: "#services" },
-    { name: "Loyihalarimiz", link: "#portfolio" },
-    { name: "Bog'lanish", link: "#contact" },
+    { name: "Asosiy", link: "home" },
+    { name: "Biz haqimizda", link: "about" },
+    { name: "Xizmatlarimiz", link: "services" },
+    { name: "Loyihalarimiz", link: "portfolio" },
+    { name: "Bog'lanish", link: "contact" },
   ];
 
   return (
@@ -25,12 +26,15 @@ export default function Navbar() {
         <ul className="hidden md:flex gap-8 text-white font-medium">
           {menuItems.map((item, i) => (
             <li key={i}>
-              <a
-                href={item.link}
-                className="hover:text-blue-400 transition-colors duration-300"
+              <Link
+                to={item.link}
+                smooth={true}
+                duration={600}
+                offset={-80} // navbar balandligini hisobga oladi
+                className="cursor-pointer hover:text-blue-400 transition-colors duration-300"
               >
                 {item.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -50,13 +54,16 @@ export default function Navbar() {
           <ul className="flex flex-col items-center gap-6 py-6 text-white font-medium">
             {menuItems.map((item, i) => (
               <li key={i}>
-                <a
-                  href={item.link}
+                <Link
+                  to={item.link}
+                  smooth={true}
+                  duration={600}
+                  offset={-80}
                   onClick={() => setOpen(false)}
-                  className="hover:text-blue-400 transition-colors duration-300"
+                  className="cursor-pointer hover:text-blue-400 transition-colors duration-300"
                 >
                   {item.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
