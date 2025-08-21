@@ -1,12 +1,14 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 export default function AboutUs() {
   return (
     <section className="relative py-16 px-6 md:px-20 group">
-      <div className="relative mx-auto flex flex-col md:flex-row justify-between gap-12  items-center">
-        {/* Chap taraf - Matn */}
+      <motion.div
+      initial= {{opacity: 0, y: -50}}
+      whileInView={{opacity: 1, y: 0}}
+      transition={{ duration: 1.7, ease: "easeInOut"}}
+      className="relative mx-auto flex flex-col md:flex-row justify-between gap-12  items-center">
 
-        {/* O‘ng taraf - Rasm */}
         <div className="flex justify-center md:w-1/2">
           <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-3xl overflow-hidden ">
             <img
@@ -60,7 +62,7 @@ export default function AboutUs() {
             </li>
           </ul>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

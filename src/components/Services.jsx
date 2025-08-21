@@ -7,6 +7,7 @@ import {
   FaLaptopCode,
   FaMobileAlt,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Services() {
   const services = [
@@ -57,19 +58,22 @@ export default function Services() {
       {/* Services grid */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, i) => (
-          <div
+          <motion.div
             key={i}
-            className="bg-[#0A192F] 
-              rounded-2xl p-8 flex flex-col items-center text-center 
-              border border-cyan-400/20 shadow-lg hover:shadow-cyan-500/30 
-              transition transform hover:-translate-y-2"
+            initial={{ opacity: 0, y: -40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: i * 0.3 }}
+            // viewport={{ once: true }}
+            whileHover={{ y: -8, boxShadow: "0 8px 25px rgba(34,211,238,0.3)" }} // faqat hover paytida
+            className="bg-[#0A192F] rounded-2xl p-8 flex flex-col items-center text-center 
+             border border-cyan-400/20 shadow-lg"
           >
             <div className="mb-6">{service.icon}</div>
             <h3 className="text-2xl font-semibold mb-3 text-cyan-300">
               {service.title}
             </h3>
             <p className="text-gray-300 leading-relaxed">{service.desc}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

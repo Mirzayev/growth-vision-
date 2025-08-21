@@ -42,9 +42,7 @@ export default function Banner() {
         {/* Chap tarafdagi yozuv */}
         <div className="space-y-6 max-w-2xl text-center md:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
-            <span className="text-blue-500">IT Yechimlari</span> orqali
-            <br className="hidden sm:block" />
-            biznesingizni yangi bosqichga olib chiqing
+            <span className="text-blue-500">IT Yechimlari</span> orqali  <br className="hidden sm:block" />    biznesingizni yangi bosqichga olib chiqing
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed">
             CRM, ERP va avtomatlashtirish tizimlari yordamida kompaniyangizni
@@ -77,7 +75,7 @@ export default function Banner() {
                 key={i}
                 className="bg-transparent rounded-2xl p-8 sm:p-10 transition duration-500 
                 w-full
-                border border-cyan-400/20 flex flex-col items-center text-center space-y-6"
+                 flex flex-col items-center text-center space-y-6"
               >
                 {/* Icon qismi */}
                 <div className="flex items-center justify-center">
