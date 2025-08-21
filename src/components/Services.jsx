@@ -62,9 +62,12 @@ export default function Services() {
             key={i}
             initial={{ opacity: 0, y: -40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: i * 0.3 }}
-            // viewport={{ once: true }}
-            whileHover={{ y: -8, boxShadow: "0 8px 25px rgba(34,211,238,0.3)" }} // faqat hover paytida
+            transition={{ duration: 0.6, delay: i * 0.2 }}
+            whileHover={{
+              y: -8,
+              boxShadow: "0 8px 25px rgba(34,211,238,0.3)",
+              transition: { duration: 0.1, ease: "easeOut" }, // tezroq hover
+            }}
             className="bg-[#0A192F] rounded-2xl p-8 flex flex-col items-center text-center 
              border border-cyan-400/20 shadow-lg"
           >

@@ -1,5 +1,6 @@
 import React from "react";
 import  yuksalish from "../assets/images/yuksalish.jpg"
+import { motion } from "framer-motion";
 export default function Portfolio() {
   const projects = [
     {
@@ -39,10 +40,13 @@ export default function Portfolio() {
       {/* Projects Grid */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((project, i) => (
-          <div
+          <motion.div
+          initial= {{ opacity: 0, y: -40}}
+          whileInView={{ opacity: 1, y: 0}}
+          transition={{ duration: 0.6, delay: i* 0.2}}
             key={i}
             className="group bg-gray-900 rounded-2xl overflow-hidden shadow-lg 
-                       hover:shadow-cyan-500/30 transition duration-500"
+                       hover:shadow-cyan-500/30 "
           >
             {/* Rasm */}
             <div className="overflow-hidden">
@@ -63,7 +67,7 @@ export default function Portfolio() {
                 Batafsil
               </button>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
