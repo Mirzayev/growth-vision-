@@ -5,7 +5,7 @@ export default function AboutUs() {
     <section className="relative py-16 px-6 md:px-20 group">
       <motion.div
       initial= {{opacity: 0, y: -50}}
-      whileInView={{opacity: 1, y: 0}}
+      whileInView={{opacity:  1, y: 0}}
       transition={{ duration: 1.7, ease: "easeInOut"}}
       className="relative mx-auto flex flex-col md:flex-row justify-between gap-12  items-center">
 
@@ -38,7 +38,8 @@ export default function AboutUs() {
           </div>
 
           <p className="text-gray-300 leading-relaxed text-lg mb-6">
-            Bizning kompaniyamiz{" "}
+            Bizning kompaniyamiz {" "} 
+             <span className="text-orange-400 font-semibold">Website</span>,{" "}
             <span className="text-cyan-400 font-semibold">CRM</span>,{" "}
             <span className="text-violet-400 font-semibold">ERP</span> va turli
             biznes jarayonlarini avtomatlashtiruvchi innovatsion yechimlar

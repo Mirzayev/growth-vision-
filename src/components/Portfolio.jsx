@@ -1,27 +1,31 @@
 import React from "react";
-import  yuksalish from "../assets/images/yuksalish.jpg"
+import yuksalish from "../assets/images/yuksalish.jpg";
 import { motion } from "framer-motion";
 export default function Portfolio() {
   const projects = [
     {
-      title: "CRM Tizimi",
-      desc: "Mijozlar bilan munosabatlarni boshqarish uchun zamonaviy va qulay tizim ishlab chiqildi.",
-      img: "https://cdn.imgbin.com/19/17/5/imgbin-customer-relationship-management-application-software-computer-icons-crm-icon-xYGC28EkFs1FYFuXjxNMuGxJk.jpg",
-    },
-    {
       title: "Yuksalish",
       desc: "Yuksalish  uchun innovatsion yangi dizayndagi veb-site yaratdik",
       img: yuksalish,
+      link: "https://yuksalish-liderlar-akademiyasi.netlify.app/",
+    },
+    {
+      title: "CRM Tizimi",
+      desc: "Mijozlar bilan munosabatlarni boshqarish uchun zamonaviy va qulay tizim ishlab chiqildi.",
+      img: "https://cdn.imgbin.com/19/17/5/imgbin-customer-relationship-management-application-software-computer-icons-crm-icon-xYGC28EkFs1FYFuXjxNMuGxJk.jpg",
+      link: "https://crm-example.netlify.app/", // bu yerga o'zingizning link qo'yasiz
     },
     {
       title: "Korporativ Veb-sayt",
       desc: "Biznes uchun zamonaviy, tezkor va mobil moslashuvchan veb-sayt yaratildi.",
       img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80",
+      link: "https://corporate-site.netlify.app/", // o'zingiznikini yozasiz
     },
     {
       title: "Mobil Ilova",
       desc: "Android va iOS uchun qulay interfeysli va foydali mobil dastur ishlab chiqildi.",
       img: "https://sigosoft.com/wp-content/uploads/2024/01/inside-image-min.png",
+      link: "https://mobile-app-example.netlify.app/", // o'zingiznikini yozasiz
     },
   ];
 
@@ -33,7 +37,8 @@ export default function Portfolio() {
           Loyihalarimiz
         </h2>
         <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-          Kompaniyamiz tomonidan amalga oshirilgan eng muvaffaqiyatli loyihalar bilan tanishing.
+          Kompaniyamiz tomonidan amalga oshirilgan  muvaffaqiyatli loyihalar
+          bilan tanishing.
         </p>
       </div>
 
@@ -41,9 +46,9 @@ export default function Portfolio() {
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((project, i) => (
           <motion.div
-          initial= {{ opacity: 0, y: -40}}
-          whileInView={{ opacity: 1, y: 0}}
-          transition={{ duration: 0.6, delay: i* 0.2}}
+            initial={{ opacity: 0, y: -40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: i * 0.2 }}
             key={i}
             className="group bg-gray-900 rounded-2xl overflow-hidden shadow-lg 
                        hover:shadow-cyan-500/30 "
@@ -63,9 +68,14 @@ export default function Portfolio() {
                 {project.title}
               </h3>
               <p className="text-gray-300">{project.desc}</p>
-              <button className="mt-4 px-5 py-2 rounded-xl bg-cyan-600 hover:bg-cyan-700 transition shadow-md shadow-cyan-500/30">
+              <a
+                href={project.link}
+                target="_blank "
+                rel="noopener noreferrer"
+                className="!importent my-8 cursor-pointer px-5 py-2 rounded-xl bg-cyan-600 hover:bg-cyan-700 transition shadow-md shadow-cyan-500/30"
+              >
                 Batafsil
-              </button>
+              </a>
             </div>
           </motion.div>
         ))}

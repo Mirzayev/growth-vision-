@@ -10,6 +10,7 @@ import onboarding from "../assets/icons/onboarding.png";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import { Link } from "react-scroll";
 
 export default function Banner() {
   const slides = [
@@ -49,12 +50,18 @@ export default function Banner() {
             samarador va raqobatbardosh qiling.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 sm:justify-center md:justify-start">
-            <button className="px-6 cursor-pointer py-3 w-full sm:w-auto bg-blue-600 hover:bg-blue-700 rounded-xl text-white font-semibold transition shadow-lg hover:shadow-blue-500/30">
+            <Link to="portfolio" smooth={true}
+            duration={800}
+            offset={-90}
+            className="px-6 cursor-pointer py-3 w-full sm:w-auto bg-blue-600 hover:bg-blue-700 rounded-xl text-white font-semibold transition shadow-lg hover:shadow-blue-500/30">
               Batafsil
-            </button>
-            <button className="px-6 cursor-pointer  py-3 w-full sm:w-auto bg-transparent border border-blue-500 hover:bg-blue-600/10 rounded-xl text-blue-400 font-semibold transition">
+            </Link>
+            <Link to="contact" smooth={true}
+            duration={1000}
+            offset={-90}
+            className="px-6 cursor-pointer  py-3 w-full sm:w-auto bg-transparent border border-blue-500 hover:bg-blue-600/10 rounded-xl text-blue-400 font-semibold transition">
               Bog‘lanish
-            </button>
+            </Link>
           </div>
         </div>
 
