@@ -116,7 +116,7 @@ export default function ContactForm() {
                   placeholder="+998 90 123 45 67"
                   value={phone}
                   onChange={(value) => setPhone(value)}
-                  inputClass="!w-full !rounded-2xl !border !border-slate-200 !bg-white !px-9 !py-3 !text-slate-900 !placeholder-slate-400 !shadow-sm !outline-none focus:!border-[#0A192F]"
+                  inputClass="!w-full !rounded-2xl !border !border-slate-200 !bg-white !px-9 !py-[24px] !text-slate-900 !placeholder-slate-400 !shadow-sm !outline-none focus:!border-[#0A192F]"
                   buttonClass="!border-none !bg-transparent"
                   containerClass="w-full"
                 />
