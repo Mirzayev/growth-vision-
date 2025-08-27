@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+
 
 export default function ContactForm() {
   const [submitting, setSubmitting] = useState(false);
@@ -114,7 +116,7 @@ export default function ContactForm() {
                   placeholder="+998 90 123 45 67"
                   value={phone}
                   onChange={(value) => setPhone(value)}
-                  inputClass="!w-full !rounded-2xl !border !border-slate-200 !bg-white !px-4 !py-3 !text-slate-900 !placeholder-slate-400 !shadow-sm !outline-none focus:!border-[#0A192F]"
+                  inputClass="!w-full !rounded-2xl !border !border-slate-200 !bg-white !px-9 !py-3 !text-slate-900 !placeholder-slate-400 !shadow-sm !outline-none focus:!border-[#0A192F]"
                   buttonClass="!border-none !bg-transparent"
                   containerClass="w-full"
                 />
