@@ -9,7 +9,7 @@ import Logo from "../assets/images/Logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-950 text-gray-300 py-12 px-6 md:px-16 mt-20 relative overflow-hidden">
+    <footer className="bg-gray-950 text-gray-300 py-12  px-6 md:px-16 mt-20 relative overflow-hidden">
       {/* Dekorativ gradient */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-cyan-500/10 blur-3xl rounded-full -z-10"></div>
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-violet-500/10 blur-3xl rounded-full -z-10"></div>

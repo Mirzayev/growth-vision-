@@ -5,6 +5,7 @@ import About from "./components/AboutUs";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Footer";
+import ContactForm from "./components/contactForm";
 
 export default function App() {
   return (
@@ -26,8 +27,10 @@ export default function App() {
       <section id="portfolio">
         <Portfolio />
       </section>
-
-      <section id="contact">
+       <section id="contactForm">
+        <ContactForm />
+      </section>
+       <section id="contact">
         <Contact />
       </section>
     </div>
