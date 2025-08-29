@@ -27,8 +27,8 @@ export default function Banner() {
         
         {/* Chap taraf yozuv */}
         <div className="space-y-8 text-center md:text-left">
-          <h1 className="text-4xl sm:text-[55px] font-extrabold leading-tight">
-            <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-violet-500 bg-clip-text text-transparent">
+          <h1 className="text-[35px] sm:text-[55px] font-extrabold leading-tight mt-20 sm:mt-0">
+            <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-violet-500 bg-clip-text text-transparent ">
               IT Yechimlari
             </span>{" "}
             <span className="text-slate-200">orqali biznesingizni yangi darajaga olib chiqing</span>
