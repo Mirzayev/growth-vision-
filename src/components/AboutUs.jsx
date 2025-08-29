@@ -38,7 +38,7 @@ export default function AboutUs() {
           </div>
 
           <p className="text-gray-300 leading-relaxed text-lg mb-6">
-            Bizning kompaniyamiz {" "} 
+            Bizning jamoamiz {" "} 
              <span className="text-orange-400 font-semibold">Website</span>,{" "}
             <span className="text-cyan-400 font-semibold">CRM</span>,{" "}
             <span className="text-violet-400 font-semibold">ERP</span> va turli
