@@ -74,7 +74,7 @@ export default function AboutUs() {
         >
           <div className="relative w-80 h-80 md:w-[420px] md:h-[420px] rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(56,189,248,0.25)]">
             <img
-              src="https://www.lincad.co.uk/wp-content/uploads/2022/08/contact-us-scaled-1.jpg"
+              src="https://lh6.googleusercontent.com/proxy/HV4mFQp7bOJSnsfU2zRcv8m-SkRNHTnuGJEARGnkY8-MlJ5nh1VB3X11nyLuGRWXnXbt2KSEHk4e5JeGjkvyK4_-f-mx5NoeXVnPUIP7CegJ2fxgdw"
               alt="About Us"
               className="w-full h-full object-cover hover:scale-110 transition duration-700"
             />
