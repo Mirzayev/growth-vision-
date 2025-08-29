@@ -9,7 +9,7 @@ import ContactForm from "./components/contactForm";
 
 export default function App() {
   return (
-    <div className="bg-[#0A192F]">
+    <div className="bg-[#0A192F] max-w-[1920px] mx-auto ">
       <Navbar />
 
       <section id="home">
