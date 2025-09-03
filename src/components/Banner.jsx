@@ -40,7 +40,7 @@ const item = {
 
 
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center py-4 sm:py-0 px-6 md:px-16 bg-gradient-to-br from-[#0f172a] via-[#111827] to-[#1e1b4b] overflow-hidden">
+    <section className="relative w-full min-h-screen flex items-center justify-center py-10 sm:py-0 px-6 md:px-16 bg-gradient-to-br from-[#0f172a] via-[#111827] to-[#1e1b4b] overflow-hidden">
       {/* Orqa fon bezaklar */}
       <div className="absolute -top-32 -left-32 w-96 h-96 bg-cyan-500/30 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-violet-600/20 rounded-full blur-3xl"></div>
