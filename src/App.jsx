@@ -4,9 +4,8 @@ import Hero from "./components/Banner";
 import About from "./components/AboutUs";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
-import Contact from "./components/Footer";
-import ContactForm from "./components/contactForm";
-
+import Contact from "./components/contactForm";
+import Footer from "./components/Footer"
 export default function App() {
   return (
     <div className="bg-[#0A192F] max-w-[1920px] mx-auto ">
@@ -27,11 +26,11 @@ export default function App() {
       <section id="portfolio">
         <Portfolio />
       </section>
-       <section id="contactForm">
-        <ContactForm />
-      </section>
        <section id="contact">
         <Contact />
+      </section>
+       <section id="contactForm">
+        <Footer />
       </section>
     </div>
   );

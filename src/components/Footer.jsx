@@ -4,6 +4,7 @@ import {
   FaTelegramPlane,
   FaInstagram,
   FaLinkedinIn,
+  FaPhone,
 } from "react-icons/fa";
 import Logo from "../assets/images/Logo.png";
 
@@ -54,14 +55,20 @@ export default function Footer() {
           </p>
           <div className="flex gap-4">
             {[
+              { icon: <FaPhone />, link: "tel:+998883211233" }, // 🔥 tel: qo'shildi
               { icon: <FaFacebookF />, link: "https://facebook.com" },
               { icon: <FaTelegramPlane />, link: "https://t.me" },
-              { icon: <FaInstagram />, link: "https://www.instagram.com/grovision.uz?igsh=MWVkaDZwb2hoanpyaw==" },
+              {
+                icon: <FaInstagram />,
+                link: "https://www.instagram.com/grovision.uz?igsh=MWVkaDZwb2hoanpyaw==",
+              },
               { icon: <FaLinkedinIn />, link: "https://linkedin.com" },
             ].map((item, i) => (
               <a
                 key={i}
                 href={item.link}
+                target={item.link.startsWith("http") ? "_blank" : undefined} // 🔥 faqat ijtimoiy tarmoqlar uchun yangi tab ochadi
+                rel="noopener noreferrer"
                 className="p-3 rounded-full bg-gray-800 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-violet-500 shadow-md hover:scale-110 transition transform duration-300"
               >
                 {item.icon}
@@ -73,7 +80,8 @@ export default function Footer() {
 
       {/* Pastki qism */}
       <div className="border-t border-gradient-to-r from-cyan-500 to-violet-500 mt-12 pt-6 text-center text-gray-500 text-sm">
-        © {new Date().getFullYear()} Sizning Kompaniyangiz. Barcha huquqlar himoyalangan.
+        © {new Date().getFullYear()} Sizning Kompaniyangiz. Barcha huquqlar
+        himoyalangan.
       </div>
     </footer>
   );
