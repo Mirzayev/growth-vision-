@@ -142,7 +142,7 @@ function FormField({ label, name, type = "text", placeholder, required }) {
         type={type}
         required={required}
         placeholder={placeholder}
-        className="w-full rounded-xl border bg-[#1E293B] border-slate-700  sm:px-4 py-3 text-slate-200 placeholder-slate-400 shadow-sm outline-none focus:border-blue-400"
+        className="w-full rounded-xl border bg-[#1E293B] border-slate-700  px-4 py-3 text-slate-200 placeholder-slate-400 shadow-sm outline-none focus:border-blue-400"
       />
     </div>
   );
